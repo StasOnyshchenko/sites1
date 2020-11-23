@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Тренировки</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="con-user">
+            <div class="avatar">
+                <img src="img/photo.jpg" alt="">
+            </div>
+            <div class="title">
+                <h1>
+                    @front_end_code
+                </h1>
+                <p>
+                    Frontend developer 
+                    <!-- <br> co-founder <a target="_blank" href="http://vuesax.com/">vuesax</a> and <a target="_blank" href="https://lusaxweb.net/">lusaxweb</a> -->
+                </p>
+            </div>
+        </div>
+        <div class="con-menu">
+            <button onclick="handleClick(event, 'con-links')" class="active">
+                Links
+            </button>
+            <button onclick="handleClick(event, 'con-posts')">
+                Posts
+            </button>
+        </div>
+        <div class="con-contents">
+            <div class="con-links">
+                <a target="_blank" href="https://www.instagram.com/front_end_code/">
+                    <i class='bx bxl-instagram-alt'></i>
+                    <span>
+                        Instagram
+                    </span>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/stas-onyshchenko-40781b17b/">
+                    <i class='bx bxl-linkedin'></i>
+                    <span>
+                        LinkedIn
+                    </span>
+                </a>
+                <a target="_blank" href="https://github.com/StasOnyshchenko">
+                    <i class='bx bxl-github'></i>
+                    <span>
+                        Github
+                    </span>
+                </a>
+                <a target="_blank" href="https://codepen.io/Stanislavovi4">
+                    <i class='bx bxl-codepen'></i>
+                    <span>
+                        Codepen
+                    </span>
+                </a>
+                <a target="_blank" href="https://dribbble.com/Stason_on">
+                    <i class='bx bxl-dribbble'></i>
+                    <span>
+                        Dribbble
+                    </span>
+                </a>
+                <a target="_blank" href="https://dribbble.com/Stason_on">
+                    <i class='bx bxl-behance'></i>
+                    <span>
+                        Behance
+                    </span>
+                </a>
+                
+                <!-- <a target="_blank" href="https://www.patreon.com/luisdanielroviracontreras">
+                    <i class='bx bxl-patreon'></i>
+                    <span>
+                        Patreon
+                    </span>
+                </a>
+                <a target="_blank" href="https://github.com/luisDanielRoviraContreras">
+                    <i class='bx bxl-github'></i>
+                    <span>
+                        Github
+                    </span>
+                </a>
+                <a target="_blank" href="https://twitter.com/luisdfly">
+                    <i class='bx bxl-twitter' ></i>
+                    <span>
+                        Twitter
+                    </span>
+                </a>
+                <a target="_blank" href="https://dribbble.com/luisdanielrovira">
+                    <i class='bx bxl-dribbble' ></i>
+                    <span>
+                        Dribbble
+                    </span>
+                </a> -->
+            </div>
+
+            <div class="con-posts">
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CH2Kej4JiCG/">
+                    <div class="con-file">
+                        <img src="img/landing.jpg" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            Landing Page
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CH2Dq0_Ffxp/">
+                    <div class="con-file">
+                        <img src="img/cards.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            Hever Effect Menu 
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://codepen.io/Stanislavovi4/full/rbZGZG">
+                    <div class="con-file">
+                        <img src="img/cards2.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-codepen'></i>
+                            Codepen
+                        </h3>
+                        <p>
+                            Landing
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://codepen.io/Stanislavovi4/full/NJwQON">
+                    <div class="con-file">
+                        <img src="img/cards3.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-codepen'></i>
+                            Codepen
+                        </h3>
+                        <p>
+                            Responsive Block Navigation
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://codepen.io/Stanislavovi4/full/xMBqeb">
+                    <div class="con-file">
+                        <img src="img/cards4.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-codepen'></i>
+                            Codepen
+                        </h3>
+                        <p>
+                            Minimal WebSite
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://codepen.io/Stanislavovi4/full/aXMJqg">
+                    <div class="con-file">
+                        <img src="img/cards5.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-codepen'></i>
+                            Codepen
+                        </h3>
+                        <p>
+                            Menu | HTML CSS
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://codepen.io/Stanislavovi4/full/VqNMmN">
+                    <div class="con-file">
+                        <img src="img/cards6.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-codepen'></i>
+                            Codepen
+                        </h3>
+                        <p>
+                            Image Hover
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://codepen.io/Stanislavovi4/full/NmLgQY">
+                    <div class="con-file">
+                        <img src="img/cards1.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-codepen'></i>
+                            Codepen
+                        </h3>
+                        <p>
+                            Minimal
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://codepen.io/Stanislavovi4/full/ExyqoEg">
+                    <div class="con-file">
+                        <img src="img/cards7.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-codepen'></i>
+                            Codepen
+                        </h3>
+                        <p>
+                            Cards
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://codepen.io/Stanislavovi4/full/LYVGBmQ">
+                    <div class="con-file">
+                        <img src="img/cards8.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-codepen'></i>
+                            Codepen
+                        </h3>
+                        <p>
+                            Sticky Animation Navigation Bar
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://codepen.io/Stanislavovi4/full/eoXgWp">
+                    <div class="con-file">
+                        <img src="img/cards9.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-codepen'></i>
+                            Codepen
+                        </h3>
+                        <p>
+                            Phone effect
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://codepen.io/Stanislavovi4/full/jRprve">
+                    <div class="con-file">
+                        <img src="img/cards10.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-codepen'></i>
+                            Codepen
+                        </h3>
+                        <p>
+                            Parallax Effect
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="https://codepen.io/Stanislavovi4/full/BXzeNO">
+                    <div class="con-file">
+                        <img src="img/cards11.png" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-codepen'></i>
+                            Codepen
+                        </h3>
+                        <p>
+                            Effect
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="#">
+                    <div class="con-file">
+                        <img src="" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            How to create Dropdown
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="#">
+                    <div class="con-file">
+                        <img src="" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            How to create Button Loading
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="#">
+                    <div class="con-file">
+                        <img src="" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            Flexbox Guide part 3
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+                <a class="post" target="_blank" href="#">
+                    <div class="con-file">
+                        <img src="" alt="">
+                    </div>
+
+                    <footer>
+                        <h3>
+                            <i class='bx bxl-instagram-alt'></i>
+                            Instagram
+                        </h3>
+                        <p>
+                            Hever Effect Menu 
+                        </p>
+                    </footer>
+
+                    <div class="effect"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script src="script.js"></script>
+</html>
